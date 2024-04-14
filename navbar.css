@@ -1,0 +1,198 @@
+/* part 1 */
+
+#Grandparent1{
+    height: 30px;
+    background:linear-gradient(to right,#E81B6A,#98043C,#4D0018,#0C0106);
+    display: flex;
+    justify-content:space-around;
+    color: white;
+    align-items: center;
+    padding: 5px;
+    
+}
+#parent2{
+    width: 30%;
+    display: flex;
+    justify-content:space-evenly;
+}
+.child1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.child1 >img{
+    width: 15px;
+    height: 17px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+/* part 2 */
+#grandparent2{
+    background-color: #0C0106;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.child1{
+    display: flex;
+}
+.child1>p{
+    color: white;
+}
+.child1 >div >img{
+    width: 50px;
+}
+#grandparent2 >div>input{
+    width: 550px;
+    height: 30px;
+    border-color: whitesmoke;
+    background-color: #212121;
+    border-radius: 5px;
+}
+#grandparent2 >div>button{
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    padding:5px;
+    cursor: pointer;
+}
+.child1{
+    margin-top: 15px;
+}
+#optionsFrame {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 1;
+}
+iframe{
+    width: 550px;
+    border-color: white;
+    border-radius: 10px;
+}
+
+/* part 3 -lip*/
+#parent3{
+    background-color:#141414;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#parent3 >div:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #E81B6A;
+}
+
+#lipsframe {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 80%; 
+    height: 100%; 
+    border: none; 
+    z-index: 9999; 
+    margin-top: 150px;
+}
+/* part3 -eye */
+#eyesframe {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 50%; 
+    height: 100%; 
+    border: none; 
+    z-index: 9999; 
+    margin-top: 150px;
+}
+/* face */
+#faceframe {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 50%; 
+    height: 100%; 
+    border: none; 
+    z-index: 9999; 
+    margin-top: 150px;
+}
+
+/* skincare */
+#skincareframe {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 40%; 
+    height: 80%; 
+    border: none; 
+    z-index: 9999; 
+    margin-top: 150px;
+}
+
+/* accessorie */
+#accessorieframe {
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 20; 
+    width: 40%; 
+    height: 80%; 
+    border: none; 
+    z-index: 9999; 
+    margin-top: 150px;
+}
+
+/* Media query */
+@media screen and (max-width:767px){
+    .child1>img{
+        display: none;
+    }
+    .child1 > p{
+        font-size: 10px;
+    }
+    /* part 2 */
+    #grandparent2 >div>input{
+        width: 300px;
+    }
+    #grandparent2 >div>button{
+        width: 50px;
+    }
+    #parent3{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    #Grandparent1{
+        flex-direction: column;
+        height: fit-content;
+    }
+    #grandparent2 >div>input{
+        width: 100px;
+    }
+    #grandparent2 >div>button{
+        width: 20px;
+    }
+    #parent3{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+

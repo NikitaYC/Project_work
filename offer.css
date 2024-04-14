@@ -1,0 +1,53 @@
+#parent4{
+    width: 95%;
+    height: 250px;
+    background: linear-gradient(to right,black,#090909,#303030);
+    display:flex;
+    justify-content:space-evenly;
+    margin:auto;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#parent4 >div{
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+}
+#parent4 > div >p:nth-child(3){
+    font-size: larger;
+    color: #FC2779;
+}
+
+/* media query */
+@media only screen and (min-width: 768px) {
+    #parent4 {
+        height: 200px; 
+    }
+
+    #parent4 > div {
+        font-size: large;
+    }
+
+    #parent4 > div > p:nth-child(3) {
+        font-size: large; 
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+    #parent4 {
+        height: auto; 
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    #parent4 > div {
+        font-size: medium; 
+    }
+
+    #parent4 > div > p:nth-child(3) {
+        font-size: medium; 
+    }
+}

@@ -1,0 +1,131 @@
+
+
+.slider-container{
+    position: relative;
+    width: 95%;
+    background-color:#282828;
+    overflow: hidden;
+    padding:40px;
+    margin: 20px;
+    margin-top: 20px;
+}
+.slider-wrapper{
+    width: calc(100% - 80px);
+    /* width: 70%; */
+    background-color:#282828;
+    display: flex;
+    transition: transform 0.5s ease;
+    justify-content: space-between;
+    gap: 29px;
+    margin: auto;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+.card {
+    width: calc(((100% - 80px) - 30px) / 4); 
+    flex: 0 0 auto;
+    gap: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 5px;
+}
+.button-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.button-div >button >img{
+    width: 30px;
+}
+.button-div >button:nth-child(2){
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+}
+#prev,#next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white ;
+    color:#D10B57;
+    font-size: 15px;
+    font-weight: 900;
+    border: none;
+    width: 50px;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+}
+#prev {
+left: 0;
+}
+
+#next {
+right: 0;
+}
+h3{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+  
+.cosmeticimage{
+    width: 200px;
+}
+
+/* whitebackground */
+#whitebackground > div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* maedia query */
+@media only screen and (min-width: 768px) {
+    .slider-container {
+        width: 90%; 
+    }
+
+    .slider-wrapper {
+        width: calc(100% - 60px); 
+    }
+
+    .button-div > button:nth-child(2) {
+        padding: 10px; 
+    }
+
+    #prev, #next {
+        width: 60px; 
+        padding: 10px; 
+        font-size: 20px; 
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+    .slider-container {
+        width: 100%; 
+        padding: 20px; 
+    }
+
+    .slider-wrapper {
+        flex-wrap: wrap;
+        justify-content: center; 
+        width: 100%; 
+    }
+
+    .card {
+        width: calc(50% - 20px); 
+    }
+
+    .button-div {
+        flex-direction: column; 
+    }
+
+    #prev, #next {
+        width: 40px; 
+        padding: 10px; 
+        font-size: 15px; 
+    }
+}

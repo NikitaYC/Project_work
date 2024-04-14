@@ -1,0 +1,50 @@
+#line{
+    margin-top: 80px;
+    color: gray;
+}
+h4{
+    cursor: pointer;
+}
+#footer1{
+    text-align: center;
+}
+body{
+    font-family: sans-serif;
+}
+#footer1 >input{
+    width: 550px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: gray;
+}
+#footer1 >button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+#footer2{
+    background-color: black;
+}
+#subfooter2{
+    text-align: center;
+    margin-top: 50px;
+}
+#subfooter2 >img{
+    width: 500px;
+    height: 200px;
+    
+}
+#subfooter3{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    font-size: 25px;
+    color: white;
+}
+#subfooter3 > h6:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

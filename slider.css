@@ -1,0 +1,91 @@
+#slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+  
+#slider>ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+#slider>ul >li {
+  width: 100%;
+}
+
+#slider >button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 2;
+}
+
+#slider >.prev {
+  left: 10px;
+}
+
+#slider >.next {
+  right: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* slider 2 */
+#slider2 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+#slider2>ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+transition: transform 0.5s ease;
+}
+
+#slider2>ul >li {
+width: 100%;
+}
+
+#slider2 >button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(0,0,0,0.3);
+border: none;
+border-radius: 50%;
+cursor: pointer;
+font-size: 20px;
+z-index: 2;
+color: white;
+padding: 5px;
+}
+
+#slider2 >.prev2 {
+left: 80px;
+}
+
+#slider2 >.next2 {
+right: 80px;
+}
+
+#slider2 >ul >li >img {
+width: 94%;
+height: auto;
+border-radius: 20px;
+margin-top: 20px;
+}
+
